@@ -22,10 +22,13 @@ body {
 }
 .box {
   display: table-cell;
+  width: 100%;
 }
 .sidebar {
-  width: 100px;
+  width: 150px;
   background: #BD4932;
+  display: table-cell;
+  vertical-align: top;
 }
 
 .footer {
@@ -65,13 +68,19 @@ body {
 
 /* === Custom styling depending on the project === */ 
 
+.opening{
+  font-size: 2em;
+  margin-top: 50px;
+}
+
 .content{
   padding-top: 20px; 
   border: 1px solid black;
 }
-.catContainer{
+#catContainer{
   display: inline-block;
   padding: 10px;
+  margin: 0 auto;
   }
 
 .catName{
@@ -89,7 +98,7 @@ body {
   width: 400px;
 }
 
-#clicks{
+.catClicks{
   margin: 15px auto;
   line-height: 2em;
   width: 100px;
@@ -97,4 +106,16 @@ body {
   border: 1px solid navy;
   background-color: #1111cc;
   text-align: center;
+}
+
+#catList{
+  padding: 10px;
+}
+
+.list-item {
+  display: block;
+  margin: 10px auto;
+  height: 70px;
+  width: 100px;
+  border: 1px solid black;
 }
