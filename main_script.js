@@ -45,7 +45,7 @@ var CatCollection = function(){
 		var html = '';
 			html += '<div class="catName">' + cats[c].name + '</div>';
 			html += '<img class="catImage" id="' + c + '" src="' + cats[c].url + '" alt="' + cats[c].name + '">';
-			html += '<div class="catClicks">' + cats[c].clicks + '</div>';
+			html += '<div class="catClicks">' + cats[c].clicks + '<span> clicks</span></div>';
 		$('#catContainer').html(html);
 
 	}
@@ -54,7 +54,7 @@ var CatCollection = function(){
 		console.log('within clicked');
 		cats[catId].clicks++;
 		console.log(cats[catId].clicks);
-		$('.catClicks').text(cats[catId].clicks);
+		$('.catClicks').html(cats[catId].clicks + '<span> clicks</span>');
 	}
 }
 
